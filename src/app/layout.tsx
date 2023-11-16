@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '../components/header'
+import { Suspense } from 'react'
+import { StaffToolbar } from 'src/components/staff-toolbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +22,9 @@ export default function RootLayout({
       <body className={inter.className}>
           <Header />
         {children}
+        <Suspense>
+          <StaffToolbar />
+        </Suspense>
       </body>
     </html>
   )
