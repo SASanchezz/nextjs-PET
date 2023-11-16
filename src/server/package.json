@@ -1,0 +1,17 @@
+{
+  "name": "test-task",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node server.js",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next-connect": "^1.0.0-next.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}

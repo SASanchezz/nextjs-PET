@@ -1,0 +1,44 @@
+.Wrapper {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  
+  display: flex;
+  width: 60%;
+  height: auto;
+  max-height: 26px;
+  max-width: 638px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 2px solid #323443;
+  background: #24252E;
+
+  &.vertical {
+    &.insertBefore,
+    &.insertAfter {
+      .Category:after {
+        left: 0;
+        right: 0;
+        height: 2px;
+      }
+    }
+    &.insertBefore {
+      &.clone {
+        margin-top: -125px;
+      }
+      .Category:after {
+        top: -15px;
+      }
+    }
+    &.insertAfter {
+      &.clone {
+        margin-bottom: 125px;
+      }
+      .Category:after {
+        bottom: -45px;
+      }
+    }
+  }
+}
